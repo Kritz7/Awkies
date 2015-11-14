@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "\n[[node1]]",
+		"position": {
+			"x": 653,
+			"y": 194
+		},
+		"colorID": 0
+	},
+	{
+		"title": "node1",
+		"tags": "",
+		"body": "<<player>>\nHey!\n<<date>>\nYo!\n",
+		"position": {
+			"x": 647,
+			"y": 458
+		},
+		"colorID": 0
+	}
+]

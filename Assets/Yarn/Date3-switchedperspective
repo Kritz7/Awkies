@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "[[Intro]]",
+		"position": {
+			"x": 447,
+			"y": -74
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node1",
+		"tags": "",
+		"body": "date: Oh, sorry I'm late!\ndate: I would have texted you, but I ran out of credit.\ndate: Hey Chris, how are you? How did you find Friday's test?\nplayer: It was Okay.\n-> I found the maths hard\n    player: There were so many numbers. \n    player: Every day I see a number I've never seen before.\n    <<set $somanynumbers to true>>\n-> I think I did alright.\n    player: I'm not sure.\n\nplayer: How did you find it?\nmono: She was late; she can't care about this that much.\nmono: She was out of phone credit?\ndate: I find the formulas quite tough.\nmono: Who uses phone credit?\n<<if $somanynumbers is true>>\ndate: You're right though, there are so many numbers!\ndate: I saw 10.0129 yesterday, I didn't even know there was a 10.0128!\n<<endif>>\n[[Node2]]",
+		"position": {
+			"x": 33,
+			"y": 194
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro",
+		"tags": "",
+		"body": "player: Hey Dan, it's good to see you.\ndate: Hey!\n-> How are you?\n    player: Doing well?\n    date: Yeah! Things are pretty great!\n-> Study going well?\n    player: How's your school work going?\n    date: Oh I'm doing AMAZING! I can't believe how easy this year has been.\n    date: I binge watched all of Star Trek this week and still finished the stats assignment.\n    <<set $binge to true>>\n-> Feeling better?\n    date: Huh? Oh yeah, I'm totally fine.\n<<if $binge is true>>\n-> Impressive\n    player: I can't tell if I'm impressed or jealous of you.\n    date: It's pretty great.\n-> Irresponsible\n    player: You should really be taking school more seriously\n    date: No way! I would much rather watch Netflix, absolutely.\n    date: I will never study if I can help it!\n    player: You're terrible, I love it.\n<<endif>>\n\n",
+		"position": {
+			"x": 417,
+			"y": 206
+		},
+		"colorID": 0
+	}
+]

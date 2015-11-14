@@ -1,0 +1,172 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "Hello!\nHow are you?\n\n-> I'm great\n    Awesome coolies broseph! ur alright by me.\n    would u like 2 eat sojme pastorinos w/ me???????\n-> I could eat like, ten butts right now.\n    get away from me beffroe i die from sadness\n\n\ni think this date is going well\ndo you agree\n\n-> I don't know\n-> Yeah alright\n\nI'M 'ASDFGHSDFGASDFGH'\n\n[[Uh, hi |Node1]]\n[[Hello |Node2]]\n",
+		"position": {
+			"x": 531,
+			"y": -9
+		},
+		"colorID": 2
+	},
+	{
+		"title": "Node1",
+		"tags": "",
+		"body": "How are you?\n[[Hi |Node4]]\n[[I'm quite well, yourself? ]]\n\n",
+		"position": {
+			"x": 924,
+			"y": 311
+		},
+		"colorID": 6
+	},
+	{
+		"title": "Node2",
+		"tags": "",
+		"body": "[[This is my favourite restaurant. |Node3]]",
+		"position": {
+			"x": 166,
+			"y": 341
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node3",
+		"tags": "",
+		"body": "[[|Node5]]\n[[...]]",
+		"position": {
+			"x": 168,
+			"y": 609
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node4",
+		"tags": "",
+		"body": "How are you?\n[[Oh, I said that already didn't I. |Node9]]",
+		"position": {
+			"x": 952,
+			"y": 611
+		},
+		"colorID": 1
+	},
+	{
+		"title": "Node5",
+		"tags": "",
+		"body": "...\n[[...|Node6]]\n[[Anyway, what kind of food do you like? |Node24]]\n[[Shall we eat? |Node25]]",
+		"position": {
+			"x": -370,
+			"y": 940
+		},
+		"colorID": 6
+	},
+	{
+		"title": "Node6",
+		"tags": "",
+		"body": "...\n[[...|Node5]]",
+		"position": {
+			"x": -698,
+			"y": 1212
+		},
+		"colorID": 1
+	},
+	{
+		"title": "Node8",
+		"tags": "",
+		"body": "Yeah, I'm ready. What would you like?\n[[Pasta. |Node14]]\n[[The vindaloo.|Node22]]\n[[Oh, uh... Cheese 'n' Mac. |Node23]]",
+		"position": {
+			"x": 1420,
+			"y": 1211
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node9",
+		"tags": "",
+		"body": "That's alright.\n[[Should we order? |Node8]]\n[[What would you like? |Node10]]",
+		"position": {
+			"x": 925,
+			"y": 878
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node10",
+		"tags": "",
+		"body": "I feel like a pasta dish.\n[[Me too |Node12]]\n[[I reckon I'll go for the fish. |Node13]]\n",
+		"position": {
+			"x": 636,
+			"y": 1208
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node12",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 517,
+			"y": 1474
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node13",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 799,
+			"y": 1469
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node14",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 1104,
+			"y": 1477
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node22",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 1421,
+			"y": 1479
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node23",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 1696,
+			"y": 1473
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node24",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": -367,
+			"y": 1225
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node25",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": -87,
+			"y": 1226
+		},
+		"colorID": 0
+	}
+]

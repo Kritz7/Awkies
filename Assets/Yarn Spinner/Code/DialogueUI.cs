@@ -87,6 +87,7 @@ namespace Yarn.Unity.Example {
 		{
 			// Show the text
 			lineText.gameObject.SetActive (true);
+			lineText.GetComponent<TextParser>().AddText(line.text);
 			
 			if (textSpeed > 0.0f) {
 				// Display the line one character at a time
@@ -174,15 +175,20 @@ namespace Yarn.Unity.Example {
 			var commandElements = command.text.Split(' ');
 
 			if (commandElements.Length > 0) {
+				Debug.Log(commandElements[0]);
+
 				// Syntax for this command = setsprite NAME SPRITENAME
 				// GameObject NAME must have a SpriteSwitcher component
 				// The SpriteSwitcher must have a sprite named SPRITENAME
-				if (commandElements[0] == "setsprite") {
+				if (commandElements[0] == "FFFFDdo") {
 					var switcher = GameObject.Find(commandElements[1])
 						.GetComponent<SpriteSwitcher>();
 					var spriteName = commandElements[2];
 					switcher.UseSprite(spriteName);
+					
 				}
+
+
 			}
 
 			yield break;

@@ -48,11 +48,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Actor.cs" />
      <Compile Include="Assets\Scripts\Answer.cs" />
+     <Compile Include="Assets\Scripts\CoolAnimation.cs" />
      <Compile Include="Assets\Scripts\GameFlow.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\Talk.cs" />
      <Compile Include="Assets\Scripts\Topic.cs" />
      <Compile Include="Assets\Scripts\UIScreen.cs" />
+     <Compile Include="Assets\TextParser.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\DialogueRunner.cs" />
      <Compile Include="Assets\Yarn Spinner\Code\DialogueUI.cs" />
      <Compile Include="Assets\Yarn Spinner\Examples\Demo Scripts\CameraFollow.cs" />

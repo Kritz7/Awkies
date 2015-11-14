@@ -1,0 +1,92 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "[[Intro]]\n<<set $anxiety to 0>>",
+		"position": {
+			"x": 80,
+			"y": -748
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node1",
+		"tags": "",
+		"body": "date: Oh, sorry I'm late!\ndate: I would have texted you, but I ran out of credit.\ndate: Hey Chris, how are you? How did you find Friday's test?\nplayer: It was Okay.\n-> I found the maths hard\n    player: There were so many numbers. \n    player: Every day I see a number I've never seen before.\n    <<set $somanynumbers to true>>\n-> I think I did alright.\n    player: I'm not sure.\n\nplayer: How did you find it?\nmono: She was late; she can't care about this that much.\nmono: She was out of phone credit?\ndate: I find the formulas quite tough.\nmono: Who uses phone credit?\n<<if $somanynumbers is true>>\ndate: You're right though, there are so many numbers!\ndate: I saw 10.0129 yesterday, I didn't even know there was a 10.0128!\n<<endif>>\n[[Node2]]",
+		"position": {
+			"x": -295,
+			"y": -471
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Intro",
+		"tags": "",
+		"body": "player: Hey Dan, it's good to see you.\ndate: Hey!\n<<set $binge to false>>\n\n-> How are you?\n    player: Doing well?\n    date: Yeah! Things are pretty great!\n-> Study going well?\n    player: How's your school work going?\n    date: Oh I'm doing AMAZING! I can't believe how easy this year has been.\n    date: I binge watched all of Star Trek this week and still finished the stats assignment.\n    <<set $binge to true>>\n-> Feeling better?\n    <<set $anxiety += 10>>\n    <<set $feelbetter to true>>\n    date: Huh? Oh yeah, I'm totally fine.\n\n<<if $binge is true>>\n    player: Star Trek, huh?\n\n    -> Impressive.\n        player: I can't tell if I'm impressed or jealous of you.\n        date: It's pretty great.\n    -> Irresponsible.\n        player: You should really be taking school more seriously\n        date: No way! I would much rather watch Netflix, absolutely.\n        date: I will never study if I can help it!\n        player: You're terrible, I love it.\n\n<<endif>>\n\n<<if $anxiety gt 0>>\n    mono: Dan rearranges his cutlery slightly\n<<endif>>\n\n[[Part1]]\n\n",
+		"position": {
+			"x": 85,
+			"y": -459
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Part1",
+		"tags": "",
+		"body": "date: Think we should order some food?\nplayer: Yeah, alright.\n-> Tacos sound good!\n    player: Love me some tacos.\n    date: Yeah! Tacos are, like, the best food ever.\n    date: I could literally eat tacos every day for the rest of my life.\n    player: Really? That's a lot of tacos.\n    date: Oh, I eat SO MANY tacos. It's wonderful.\n    player: ... well, alrighty then, tacos it is.\n-> Burgers?\n    player: I think the burgers are supposed to be good.\n    date: As long as they don't have mayo on them.\n    player: You don't like mayo?\n    date: Uck! Mayo is terrible. It's the worst.\n    date: I hate mayo.\n    date: I will literally throw my food in the trash if it has mayo.\n    date: Not even joking. Gross.\n    date: Yuck.\n    player: ... well I'm getting the burgers\n    date: Okay, alright, I'll trust you. But no mayo.\n-> Fish and chips.\n    player: I've been wanting some fish and chips for ages. You?\n    date: Yeah, I could do fish.\n    date: As long as what we get doesn't look like a dead fish.\n    date: I hate it when food looks like the thing it was when it was alive.\n    player: Dan, you are the strangest person.\n    date: What? I don't want to see a gross fish eyeball in my food!\n    player: This place PROBABLY isn't going to give you fish eyeballs.\n    date: I hope not.\n    player: Trust me, Dan.\n    date: Nothing good has ever come from someone saying \"Trust me, Dan\".\n    player: Trust me.\n\nmono: Dan fidgets with his cutlery\n\n[[Part2]]",
+		"position": {
+			"x": 91,
+			"y": -199
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Part2",
+		"tags": "",
+		"body": "player: This place isn't usually so crowded.\ndate: I'd hope not, this doesn't seem like the highest class restaurant\ndate: It has two stars on Yelp.\ndate: ... are we going to get food posioning?\n-> Probably\n    player: If we do, you could write a bad review.\n    date: I think even if I was food posioned, I wouldn't write a yelp review.\n    date: I'd probably be too busy throwing up.\n    player: Lovely.\n    date: ... or pooping.\n    player: Dan, I don't want to think about you pooping.\n    date: Everybody poops.\n    date: Especially when they have food posioning.\n-> Never.\n    <<set $anxiety += 5>>\n    player: Don't be ridicious.\n    date: It's a perfectly reasonable question.\n\nmono: Dan is tapping his cutlery against the table\n\n-> You okay?\n    <<set $anxiety += 5>>\n    <<set $pressing += 1>>\n    player: Doing alright, man?\n    date: I'm fine.\n-> That's really annoying\n    <<set $anxiety += 10>>\n    <<set $pressing += 1>>\n    <<set $reallyAnnoying to true>>\n    player: If you keep tapping your fork against the table\n    player: I will throw this menu at you\n    date: Oh, uh, sorry.\n    date: Yeah I do that sometimes.\n    date: My bad.\nplayer: That's alright man.\n\nmono: Dan takes a deep breath\n\n-> Are you sure you're doing okay?\n    <<set $anxiety += 5>>\n    <<set $pressing += 1>>\n    player: You're looking kind of...\n    date: Yeah I'm...\n    date: I think I um.\n-> ...\n    <<set $anxiety -= 5>>\n    date: I guess I get a little weirded out by crowds.\n    <<set $crowdanx to true>>\n\n<<if $crowdanx is true>>\n\n    -> It's not THAT crowded.\n        <<set $anxiety += 5>>\n        <<set $deflecting to true>>\n        player: It's busy, but it could be worse.\n        date: yeah... if you say so.\n        player: relax! Food should be here soon.\n    -> Seems fine to me.\n        <<set $anxiety += 5>>\n        <<set $deflecting to true>>\n        player: Don't worry about it, it's not a big deal.\n        date: Uhhh, yeah, you're right... I guess.\n    -> Yeah, I feel you.\n        <<set $anxiety -= 10>>\n        player: Mm, that's okay man.\n        date: I'd prefer not to make a big deal of it.\n        player: No worries, Dan.\n    \n    mono: Dan takes another breath.\n<<endif>>\n\n<<if $anxiety > 20>>\n    [[Anxiety1]]\n<<else>>\n    [[Part3]]\n<<endif>>\n",
+		"position": {
+			"x": 89,
+			"y": 45
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Anxiety1",
+		"tags": "",
+		"body": "date: Hey, don't freak out, but I'm going to step outside for a bit.\n-> What? Why?\n    player: We just got here, what?\n    date: I'll explain later, I just-\n    date: Give me a bit.\n    [[Explain1]]\n-> That's fine.\n    player: Take as much time as you need.\n    date: I'll be right back, don't worry.\n    date: ... thanks.\n    [[LiteExplain1]]\n",
+		"position": {
+			"x": 648,
+			"y": 224
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Part3",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 91,
+			"y": 458
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Explain1",
+		"tags": "",
+		"body": "mono: After a while, Dan comes back.\nmono: Dan looks better, but a little nervous.\ndate: Hey, so, I'm not sure if I've mentioned this before...\ndate: But I have a pretty bad anxiety disorder that, uh\ndate: It can make certain situations difficult to deal with.\ndate: Usually it's not a big deal, but sometimes I just...\ndate: I need to decompress a little.\n-> Was it something I did?\n    player: Oh... was that my fault?\n    date: No, no. I mean, well.\n    date: Okay, let me give an example.\n-> Are you okay now?\n    player: Will you be fine for the rest of today?\n    date: Well, that's the thing.\n    date: Anxiety's tricky, it's not always predictable.\n    date: There's not always a way to tell if I'll have an anxiety attack.\n    date: But, in the future, it might help you to hear what helps me relax.\n\nplayer: Okay, please, tell me.\ndate: Well, okay.\n\n<<if $deflecting is true>>\n    date: When I said it was crowded in here, you kind of...\n    date: said that it wasn't crowded \"for you\".\n    date: and it doesn't make me feel great when people can't realise\n    date: that I feel the way I feel. You don't need to agree with me,\n    date: but understanding that it's different for me is helpful.\n\n    player: Oh, okay. I think I get it.\n    player: In a way it was like I was discrediting how you felt?\n    date: Yeah, something like that.\n    player: Okay. Anything else?\n<<endif>>\n\n<<if $pressing gte 2>>\n    date: When I was freaking out back there, you kept asking me if I was fine\n    date: and while I get that was coming from a good place, it actually just...\n    date: made me even more self concious.\n    player: So I shouldn't ask how you're doing?\n    date: absolutely feel free to ask, but just know that there's a point\n    date: where it can help to just listen and see how I'm acting\n    date: because I've gone through this before, and I have my own methods of\n    date: calming down that can help.\n    player: Okay, I'll be mindful of that if it happens again. What else?\n<<endif>>\n\n<<if $reallyAnnoying is true>>\n    date: I know you were probably just joking,\n    date: but saying I'm being annoying is pretty rude even among friends.\n    player: Hey, yeah, sorry. I shouldn't have said that.\n    date: It's okay. One of the ways I help myself when I feel anxious is\n    date: a strategy called mindfullness, and playing around with physical objects\n    date: is just a small part of that.\n    player: I'm glad you told me that. I'll remember that in the future.\n    date: thanks. Hm, let me think...\n<<endif>>\n\ndate: I think that's everything.\nplayer: Dan, thanks for telling me all of that.\ndate: That's okay! I know you're trying to do what's best.\ndate: It helps to talk about anxiety with others, so I'm glad you could listen.",
+		"position": {
+			"x": 853,
+			"y": 479
+		},
+		"colorID": 0
+	},
+	{
+		"title": "LiteExplain1",
+		"tags": "",
+		"body": "mono: Dan comes back after a short amount of time\nmono: He looks a lot calmer.\n",
+		"position": {
+			"x": 490,
+			"y": 487
+		},
+		"colorID": 0
+	}
+]

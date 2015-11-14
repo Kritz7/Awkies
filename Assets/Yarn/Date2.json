@@ -1,0 +1,52 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "<<butts dfsahf fjnasdghjbnm>>\n\n[[Node1]]",
+		"position": {
+			"x": 552,
+			"y": -426
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node1",
+		"tags": "",
+		"body": "date: Oh, sorry I'm late!\ndate: I would have texted you, but I ran out of credit.\ndate: Hey Chris, how are you? How did you find Friday's test?\nplayer: It was Okay.\n-> I found the maths hard\n    player: There were so many numbers. \n    player: Every day I see a number I've never seen before.\n    <<set $somanynumbers to true>>\n-> I think I did alright.\n    player: I'm not sure.\n\nplayer: How did you find it?\nmono: She was late; she can't care about this that much.\nmono: She was out of phone credit?\ndate: I find the formulas quite tough.\nmono: Who uses phone credit?\n<<if $somanynumbers is true>>\ndate: You're right though, there are so many numbers!\ndate: I saw 10.0129 yesterday, I didn't even know there was a 10.0128!\n<<endif>>\n[[Node2]]",
+		"position": {
+			"x": 547,
+			"y": -135
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node2",
+		"tags": "",
+		"body": "date: This place seems nice, have you been here before?\nplayer: It's my first time!\nplayer: I've heard good things about it.\ndate: What are you thinking of getting?\ndate: I feel like fish and chips, but there's a lot that looks good.\n-> I'm thinking tacos.\n    player: I'm lookin to nosh some tacos, dude\n    date: Tacos are my favourite of the crescent-shaped foods!\n-> The burger looks alright.\n    player: I hear the burgers got good reviews.\n    date: One of my favourite video games is about burgers. You should play it!\n    player: Oh really, that sounds interesting!\n    date: It's actually the best game ever made, probably, of all time. Like, topsies.\n    player: Wow!\n    date: I could talk about it forever! \n    mono: This game sounds really interesting!\n    player: On second thought let's just get tacos.\n-> I agree, fish and chips all way.\n    player: I'm so into fish and chips.\n    date: Great minds! Great minds!\nplayer: I'm glad we had the chance to catch up today!\nmono: Maybe she DID run out of credit.\nplayer: I've been really looking forward to it.\nplayer: It's great to catch up\nmono: Wait did I already say it was nice to see her?\nplayer: It's just, you know, really cool.\nmono: I shouldn't have assumed she would be intentionally late. I'm an asshole.\nmono: Crap! I think I'm leading this conversation too much.\n\n[[Where do you work?|Work]]\n[[What kind of movies are you into?|Movies]]",
+		"position": {
+			"x": 538,
+			"y": 132
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Movies",
+		"tags": "",
+		"body": "player: What movies have you seen recently?\r\ndate: I really like Sci-fi. I saw The Martian five times already!\r\nplayer: I haven't seen it yet. I'd love to go see it some time.\r\ndate: Hey, yeah, that's a good idea! We should do that together.\r\nmono: Oh, she wants to go see a movie?\r\nmono: Would it be a date?\r\nmono: It was phrased like it could be a catch up, not a date...\r\nmono: Wait, does that mean she just wants to be friends?\r\nplayer: for a catch up?\r\ndate: Yeah, sure!\r\n-> Sounds cool\r\n    player: I'm in! We can sort out the deets later on if you'd like.\r\n    date: Great!\r\n-> Uh, I'll think about it\r\n    player: I'll um, check my calendar.\r\n    date: Oh, no problem, you're probably pretty busy, right?\r\n    player: Yeah, a little. Thanks for the offer, though.\r\n    mono: Darn it, I would have been way into seeing Martian!\r\nplayer: Sorry if I seem a little on edge. I'm having a good time.\r\n\r\n\r\n\r\n\r\n<<addanxiety 10>>\r\n-> mono: I’ve thought this way before, this is what I do when I’m anxious.\r\n    <<addanxiety -10>>\r\n-> I’m sorry I was stupid.\r\n    date: Oh don’t say that, it’s fine.\r\n    <<set $apologised to true>>\r\n    <<addanxiety 10>>\r\n\r\n<<if $apologised is true>>\r\n\r\n<<endif>>",
+		"position": {
+			"x": 815,
+			"y": 658
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Work",
+		"tags": "",
+		"body": "empty textzzzzz z",
+		"position": {
+			"x": 145,
+			"y": 660
+		},
+		"colorID": 0
+	}
+]

@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "[[Node1]]",
+		"position": {
+			"x": 540,
+			"y": 260
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node1",
+		"tags": "",
+		"body": "date: Hey Chris, how are you? How did you find Friday's test?\nplayer: It was Okay...\n-> I found the maths hard\n    player: There were so many numbers. \n    player: Every I see a number I've never seen before.\n    <<set $somanynumbers to true>>\n-> I think I did alright.\n    player: I'm not sure.\n\nplayer: How did you find it?\ndate: I find the formulas quite tough.\n<<if $somanynumbers is true>>\ndate: You're right though, there are so many numbers.\ndate: Yeah, 14 that's a new one.\n<<endif>>\ndate: Should we sit down and order something?",
+		"position": {
+			"x": 840,
+			"y": 513
+		},
+		"colorID": 0
+	}
+]
